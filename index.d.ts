@@ -154,7 +154,7 @@ export interface FastifyDynamicSwaggerOptions extends FastifySwaggerOptions {
 export interface StaticPathSpec {
   path: string;
   postProcessor?: (spec: OpenAPI.Document) => OpenAPI.Document;
-  baseDir: string;
+  baseDir?: string;
 }
 
 export interface StaticDocumentSpec {
